@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labor Management Form</title>
+</head>
+<body>
+    <h1>Labor Management Form</h1>
+    
+    <form action="/labour_details/labourdata.html" method="POST">
+        <!-- Employee Information -->
+        <fieldset>
+            <legend>Employee Information</legend>
+            <label for="employee_name">Employee Name:</label>
+            <input type="text" id="employee_name" name="employee_name" required><br><br>
+
+            <label for="employee_id">Employee ID:</label>
+            <input type="text" id="employee_id" name="employee_id" required><br><br>
+
+            <label for="employee_age">Employee Age:</label>
+            <input type="text" id="employee_age" name="employee_age" required><br><br>
+
+            <label for="department">Department:</label>
+            <select id="department" name="department">
+                <option value="hr">Human Resources</option>
+                <option value="finance">Finance</option>
+                <option value="operations">Operations</option>
+                <option value="it">Information Technology</option>
+            </select><br><br>
+        </fieldset>
+
+        <!-- Task Assignment -->
+        <fieldset>
+            <legend>Task Assignment</legend>
+            <label for="task">Task:</label>
+            <input type="text" id="task" name="task" required><br><br>
+
+            <label for="due_date">Due Date:</label>
+            <input type="date" id="due_date" name="due_date" required><br><br>
+        </fieldset>
+
+        <!-- Schedule -->
+        <fieldset>
+            <legend>Schedule</legend>
+            <label for="start_time">Start Time:</label>
+            <input type="time" id="start_time" name="start_time" required><br><br>
+
+            <label for="end_time">End Time:</label>
+            <input type="time" id="end_time" name="end_time" required><br><br>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

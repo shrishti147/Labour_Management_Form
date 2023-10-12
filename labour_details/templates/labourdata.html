@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>details of labour</title>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+            
+
+
+
+        }
+    </style>
+</head>
+
+   
+<body>
+    
+    
+    
+    
+
+    
+   
+
+
+    
+      <table >
+        
+          <tr>
+            <th> EMPLOYEE NAME</th>
+            <th>EMPLOYEE ID</th>
+            <th>EMPLOYEE AGE</th>
+            <th>DEPARTMENT</th>
+            <th>TASK</th>
+            <th>DUE DATE</th>
+            <th>START TIME</th>
+            <th>END TIME</th>
+            <th>BUTTON</th>
+            
+
+          </tr>
+        
+          {% for entries in labourtable %}
+          <tr>
+            <td>{{ entries.employee_name }}</td>
+            <td>{{ entries.employee_id }}</td>
+            <td>{{ entries.employee_age }}</td>
+            <td>{{ entries.department }}</td>
+            <td>{{ entries.task }}</td>
+            <td>{{ entries.due_date }}</td>
+            <td>{{ entries.start_time }}</td>
+            <td>{{ entries.end_time }}</td>
+            <td>  <button onclick="myFunction1()">Try it</button></td>
+          
+              
+          
+          {% endfor %}
+          
+            
+            
+          </tr>
+
+
+      </table>
+      <script>
+        function myFunction1() {
+        alert("I am an alert box!");
+        }
+        
+      </script>
+      
+    
+    
+              
+
+        
+    
+    
+
+</body>
+</html>
